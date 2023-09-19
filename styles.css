@@ -1,0 +1,52 @@
+body {
+    background-color: #e4e4e7;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    background-color: white;
+    padding: 24px 32px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.right img {
+    width: 70px;
+    height: 70px;
+}
+button.sign-up {
+    border: none;
+    background: none;
+    color: #292524;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    font-family: inherit;
+}
+main {
+    padding: 24px 32px;
+}
+.buttonDiv {
+    text-align: center;
+}
+button#newBookBtn {
+    font-size: 1.4em;
+    font-family: inherit;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+}
+button#newBookBtn:hover {
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
