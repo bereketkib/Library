@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
 }
 header {
     background-color: white;
@@ -49,4 +50,95 @@ button#newBookBtn {
 button#newBookBtn:hover {
     background-color: white;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.formDiv {
+    padding: 24px 32px;
+    border: 2px solid #111827;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 20px;
+    width: 350px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cancel button {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    float: right;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+.formDiv form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+input:not([type="submit"]) {
+    padding: 6px 8px;
+    font-family: inherit;
+    background-color: #e4e4e7;
+    border: none;
+    border-radius: 7px;
+    width: 300px;
+}
+input[type="submit"] {
+    border: none;
+    border-radius: 7px;
+    background: none;
+    color: #292524;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    font-family: inherit;
+    background-color: #e4e4e7;
+}
+input[type="submit"]:hover {
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+div#bookList {
+    display: flex;
+    gap: 48px;
+    flex-flow: row wrap;
+    margin-top: 48px;
+}
+div.book-card{
+    padding: 12px 24px;
+    /* border: 2px solid #111827; */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    background-color: #ffedd5;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.buttons {
+    align-self: self-end;
+}
+.delete-button, 
+.like-button {
+    border: none;
+    background: none;
+    font-size: 1.2em;
+    padding: 6px 8px;
+    cursor: pointer; 
+}
+.book-card h3,
+.book-card p {
+    margin: 0;
+}
+.book-card input {
+    margin-right: 12px;
 }
